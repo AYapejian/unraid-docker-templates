@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Facebox</Name>
+  <Description>Facebox image detection</Description>
+  <Registry>https://hub.docker.com/r/machinebox/facebox</Registry>
+  <Repository>machinebox/facebox</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+        <Name>MB_KEY</Name>
+        <Value>123456</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data />
+  <Version>05616fd2</Version>
+  <WebUI>http://[iP]:[PORT:8080]/</WebUI>
+  <Banner />
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
